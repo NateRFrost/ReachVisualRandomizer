@@ -20,11 +20,11 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
 
 # FAQ
 - What does this randomize?
-  - Enemy types, the weapons they hold, if they are in vehicles (no vehicle to vehicle only), they types of vehicles they use, weapons, vehicles, equipment and misc objects that can be found in the world, custscene dialogue, and cutscene model variants.
+  - Enemy types, the weapons they hold, if they are in vehicles (no vehicle to vehicle only), they types of vehicles they use, weapons, vehicles, equipment and misc objects that can be found in the world, custscene dialogue, and cutscene model variants. Certain enemies that if randomized could softlock the game and allies are not randomized.
 - How likely is a softlock?
-  - Unlikely with default settings. If you get stuck, try looking around for enemies (jetpack elites can get in weird spots) or backtracking and going back through a level without using a jetpack or flying vehicle.
+  - Unlikely with default settings. If you get stuck, try looking around for enemies (jetpack elites can get in weird spots) or backtracking and going back through a level without using a jetpack or flying vehicle. If you don't use the default settings, sometimes the required-to-progress target locater can clip out of bounds near the beginning of ONI: Sword Base.
 - Why does the randomizer take so long?
-  - It cbuilds ompiles each level from scratch using the offiical mod tools. This ensures that all objects are loaded into each level and made it drasticlly easier for me to code.
+  - It builds and compiles each level from scratch using the offiical mod tools. This ensures that all objects are loaded into each level and made it drasticlly easier for me to code.
 - Will you make randomizers for the other Halo games?
   - I might make randmoziers for 3, ODST, or 4 as those are compatible with this method of randomization.
 
