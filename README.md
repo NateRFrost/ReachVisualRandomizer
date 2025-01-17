@@ -16,13 +16,15 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
      - You check the path of each from your steam library by: right clicking -> manage -> browse local files
      - If you have your MCC installation across multiple locations, make sure it is the one where the Reach campaign is installed.
 6. Click start randomization. The first level takes 10+ minutes to finish randomizing. All levels finish randomizing in about 60 minutes.
-7. Play! You can play levels that have already been randomized while you wait for the rest to randomize.
+7. Play! Make sure you boot MCC with anti-cheat off. You can play levels that have already been randomized while you wait for the rest to randomize.
 
 # FAQ
 - What does this randomize?
   - Enemy types, the weapons they hold, if they are in vehicles (no vehicle to vehicle only), they types of vehicles they use, weapons, vehicles, equipment and misc objects that can be found in the world, custscene dialogue, and cutscene model variants. Certain enemies that if randomized could softlock the game and allies are not randomized.
 - How likely is a softlock?
   - Unlikely with default settings. If you get stuck, try looking around for enemies (jetpack elites can get in weird spots) or backtracking and going back through a level without using a jetpack or flying vehicle. If you don't use the default settings, sometimes the required-to-progress target locater can clip out of bounds near the beginning of ONI: Sword Base.
+- Can I play this online with friends?
+  - Yes! If everyone runs the tool with the same settings and seed, you can play together. 
 - Why does the randomizer take so long?
   - It builds and compiles each level from scratch using the offiical mod tools. This ensures that all objects are loaded into each level and made it drasticlly easier for me to code.
 - Will you make randomizers for the other Halo games?
