@@ -26,6 +26,6 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
 - Why does the randomizer take so long?
   - It builds and compiles each level from scratch using the offiical mod tools. This ensures that all objects are loaded into each level and made it drasticlly easier for me to code.
 - Will you make randomizers for the other Halo games?
-  - I might make randmoziers for 3, ODST, or 4 as those are compatible with this method of randomization.
+  - I might make randomziers for 3, ODST, or 4 as those are compatible with this method of randomization.
 
  Huge thanks to Daniel McCluskey for laying the groundwork for this tool.
