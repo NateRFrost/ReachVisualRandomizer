@@ -4,7 +4,7 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
 
 # Requirements
 - Halo Reach on MCC
-- Halo Reach offiical mod tools (aka HREK)
+- Halo Reach official mod tools (aka HREK)
   - They can be downloaded via steam https://store.steampowered.com/app/1695793/Halo_Reach_Mod_Tools__MCC/
  
 # How to use
