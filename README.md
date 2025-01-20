@@ -8,7 +8,7 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
   - They can be downloaded via steam https://store.steampowered.com/app/1695793/Halo_Reach_Mod_Tools__MCC/
  
 # How to use
-1. Consider backing up your installation of Reach as the tool will overwrite them.
+1. Consider backing up your installation of Reach as the tool will overwrite it.
 2. If you use the mod tools for other purposes, consider backing up any files you've edited as the tool will overwrite them
 3. Start ReachVisualRandomizer.exe
 4. Configure your seed and other settings as you please (default settings recommended)
