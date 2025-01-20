@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>HR_Default_Visor_Icon.ico</ApplicationIcon>
+    <PackageIcon>HR_Default_Visor_Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +18,14 @@
     <Content Include="7za.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="HR_Default_Visor_Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\HR_Default_Visor_Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

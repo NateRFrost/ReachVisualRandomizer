@@ -30,7 +30,11 @@ namespace ReachVisualRandomizer
             progress.Report(10);
             var param = new ManagedBlamStartupParameters();
             ManagedBlamCrashCallback del = info => { };
-            ManagedBlamSystem.Start(settings.EkPath, del, param);
+            if (!ManagedBlamSystem.IsInitialized)
+            {
+                ManagedBlamSystem.Start(settings.EkPath, del, param);
+            }
+            
             text_progress.Report("Giving vehicle and weapon animations for enemies");
             progress.Report(14);
             FixAnimationGraphs();
@@ -796,14 +800,15 @@ namespace ReachVisualRandomizer
                 }
                 public void Randomize()
                 {
-                    if (skipKeyWords.Any(x => Squad.ElementHeaderText.ToLower().Contains(x.ToLower())))
+                    Debug.WriteLine("randomizing " + Squad.ElementHeaderText);
+                    if (skipKeyWords.Any(x => Squad.ElementHeaderText.ToLower().Contains(x.ToLower())) && !forceNoSkipKeyWords.Any(x => Squad.ElementHeaderText.ToLower().Contains(x.ToLower())))
                     {
-                        //Debug.WriteLine("Skipping squad: " + Squad.ElementHeaderText);
+                        Debug.WriteLine("Skipping squad: " + Squad.ElementHeaderText);
                         return;
                     }
                     if (skipKeyWords.Any(x => TemplateName.ToLower().Contains(x.ToLower())) && !forceNoSkipKeyWords.Any(x => TemplateName.ToLower().Contains(x.ToLower())))
                     {
-                        //Debug.WriteLine("Skipping squad: " + TemplateName);
+                        Debug.WriteLine("Skipping squad: " + TemplateName);
                         return;
                     }
                     ClearSpawnPointsOverrides();
@@ -862,7 +867,10 @@ namespace ReachVisualRandomizer
                             }
                             
                         }
-
+                        else
+                        {
+                            Debug.WriteLine("old vehicle: " + old_vehicle.Name + " index: " + old_vehicle.PaletteIndex);
+                        }
                         if ((give_vehicle) || (old_vehicle != null))
                         {
                             var new_vehicle = vehicles.GetRandomObjectWeighted(Rand, subcategories: [SubCategory.Land, SubCategory.Air, SubCategory.Civilian], require_palette_index: true);
@@ -879,6 +887,7 @@ namespace ReachVisualRandomizer
                             }
                             if (new_vehicle != null)
                             {
+                                Debug.WriteLine("new vehicle: " +  new_vehicle.Name);
                                 ((TagFieldBlockIndex)vehicle_field).Value = new_vehicle.PaletteIndex;
                                 SetNormalDiffCountOfCell(cell, new_vehicle.Seats);
                                 var vehicle_variant_field = cell.Fields.Where(x => x.DisplayName == "vehicle variant").FirstOrDefault();
@@ -887,6 +896,7 @@ namespace ReachVisualRandomizer
                                     var variant = new_vehicle.Variants.GetRandomObjectWeighted(Rand);
                                     if (variant != null)
                                     {
+                                        Debug.WriteLine("new vehicle variant: " +  variant.Name);
                                         ((TagFieldElementStringID)vehicle_variant_field).Data = variant.Name;
                                     }
                                 }
@@ -1250,7 +1260,7 @@ namespace ReachVisualRandomizer
                         if (!SkipSpecialEnemyTypes)
                         {
                             var vehicle_field = GetField(spawn_point, "vehicle type");
-                            if (vehicles.List.Any(x => x.PaletteIndex == ((TagFieldBlockIndex)vehicle_field).Value))
+                            if (vehicles.List.Any(x => x.PaletteIndex == ((TagFieldBlockIndex)vehicle_field).Value && ((TagFieldBlockIndex)vehicle_field).Value != -1))
                             {
                                 old_vehicle = vehicles.List.Where(x => x.PaletteIndex == ((TagFieldBlockIndex)vehicle_field).Value).FirstOrDefault();
                                 ((TagFieldBlockIndex)vehicle_field).Value = -1;

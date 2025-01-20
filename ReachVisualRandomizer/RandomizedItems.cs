@@ -224,27 +224,27 @@ namespace ReachVisualRandomizer
                 //new RandomizedObjectDetails{Name = "jackal_shield", Path = @"objects\weapons\melee\jackal_shield\jackal_shield" },
                 //new RandomizedObjectDetails{Name = "skirmisher_bracers", Path = @"objects\weapons\melee\skirmisher_bracers\skirmisher_bracers" },
                 //new RandomizedObjectDetails{Name = "unarmed", Path = @"objects\weapons\melee\unarmed\unarmed", CompatibleEnemies = characters.List.Where(o => o.Name.Contains("engineer")).ToList() },
-                new RandomizedObjectDetails{Name = "magnum", Path = @"objects\weapons\pistol\magnum\magnum", AmmoMag = 8, AmmoTotal = 24, CompatibleEnemies = characters, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "needler", Path = @"objects\weapons\pistol\needler\needler", AmmoMag = 24, AmmoTotal = 72, CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "plasma_pistol", Path = @"objects\weapons\pistol\plasma_pistol\plasma_pistol", CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "assault_rifle", Path = @"objects\weapons\rifle\assault_rifle\assault_rifle", AmmoMag = 32, AmmoTotal = 160, CompatibleEnemies = characters, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "concussion_rifle", Path = @"objects\weapons\rifle\concussion_rifle\concussion_rifle", AmmoMag = 6, AmmoTotal = 18, CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "dmr", Path = @"objects\weapons\rifle\dmr\dmr", AmmoMag = 15, AmmoTotal = 45, CompatibleEnemies = characters, Weight = 7, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "focus_rifle", Path = @"objects\weapons\rifle\focus_rifle\focus_rifle", CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "grenade_launcher", Path = @"objects\weapons\rifle\grenade_launcher\grenade_launcher", AmmoMag = 1, AmmoTotal = 16, CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "needle_rifle", Path = @"objects\weapons\rifle\needle_rifle\needle_rifle", AmmoMag = 21, AmmoTotal = 63, CompatibleEnemies = characters, Weight = 7, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "plasma_repeater", Path = @"objects\weapons\rifle\plasma_repeater\plasma_repeater", CompatibleEnemies = characters, Weight = 7, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "plasma_rifle", Path = @"objects\weapons\rifle\plasma_rifle\plasma_rifle", CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "shotgun", Path = @"objects\weapons\rifle\shotgun\shotgun", AmmoMag = 6, AmmoTotal = 18, CompatibleEnemies = characters, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "sniper_rifle", Path = @"objects\weapons\rifle\sniper_rifle\sniper_rifle", AmmoMag = 4, AmmoTotal = 12, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "spike_rifle", Path = @"objects\weapons\rifle\spike_rifle\spike_rifle", AmmoMag = 40, AmmoTotal = 120, CompatibleEnemies = characters, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "flak_cannon", Path = @"objects\weapons\support_high\flak_cannon\flak_cannon", AmmoMag = 5, AmmoTotal = 20, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "plasma_launcher", Path = @"objects\weapons\support_high\plasma_launcher\plasma_launcher", CompatibleEnemies = characters, Weight = 4, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "rocket_launcher", Path = @"objects\weapons\support_high\rocket_launcher\rocket_launcher", AmmoMag = 2, AmmoTotal = 8, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "spartan_laser", Path = @"objects\weapons\support_high\spartan_laser\spartan_laser", CompatibleEnemies = characters, Weight = 4, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "machinegun_turret_jorge", Path = @"objects\weapons\turret\machinegun_turret_jorge\machinegun_turret_jorge", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 2, Faction = Faction.Human},
-                new RandomizedObjectDetails{Name = "plasma_turret", Path = @"objects\vehicles\covenant\turrets\plasma_turret\weapon\plasma_turret\plasma_turret", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 2, Faction = Faction.Covenant},
-                new RandomizedObjectDetails{Name = "machinegun_turret", Path = @"objects\vehicles\human\turrets\machinegun\weapon\machinegun_turret\machinegun_turret", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 2, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "magnum", Path = @"objects\weapons\pistol\magnum\magnum", AmmoMag = 8, AmmoTotal = 24, CompatibleEnemies = characters, Faction = Faction.Human, Weight = 20},
+                new RandomizedObjectDetails{Name = "needler", Path = @"objects\weapons\pistol\needler\needler", AmmoMag = 24, AmmoTotal = 72, CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "plasma_pistol", Path = @"objects\weapons\pistol\plasma_pistol\plasma_pistol", CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "assault_rifle", Path = @"objects\weapons\rifle\assault_rifle\assault_rifle", AmmoMag = 32, AmmoTotal = 160, CompatibleEnemies = characters, Faction = Faction.Human, Weight = 20},
+                new RandomizedObjectDetails{Name = "concussion_rifle", Path = @"objects\weapons\rifle\concussion_rifle\concussion_rifle", AmmoMag = 6, AmmoTotal = 18, CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "dmr", Path = @"objects\weapons\rifle\dmr\dmr", AmmoMag = 15, AmmoTotal = 45, CompatibleEnemies = characters, Weight = 14, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "focus_rifle", Path = @"objects\weapons\rifle\focus_rifle\focus_rifle", CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "grenade_launcher", Path = @"objects\weapons\rifle\grenade_launcher\grenade_launcher", AmmoMag = 1, AmmoTotal = 16, CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "needle_rifle", Path = @"objects\weapons\rifle\needle_rifle\needle_rifle", AmmoMag = 21, AmmoTotal = 63, CompatibleEnemies = characters, Weight = 14, Faction = Faction.Covenant},
+                new RandomizedObjectDetails{Name = "plasma_repeater", Path = @"objects\weapons\rifle\plasma_repeater\plasma_repeater", CompatibleEnemies = characters, Weight = 20, Faction = Faction.Covenant},
+                new RandomizedObjectDetails{Name = "plasma_rifle", Path = @"objects\weapons\rifle\plasma_rifle\plasma_rifle", CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "shotgun", Path = @"objects\weapons\rifle\shotgun\shotgun", AmmoMag = 6, AmmoTotal = 18, CompatibleEnemies = characters, Faction = Faction.Human, Weight = 20},
+                new RandomizedObjectDetails{Name = "sniper_rifle", Path = @"objects\weapons\rifle\sniper_rifle\sniper_rifle", AmmoMag = 4, AmmoTotal = 12, CompatibleEnemies = characters, Weight = 8, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "spike_rifle", Path = @"objects\weapons\rifle\spike_rifle\spike_rifle", AmmoMag = 40, AmmoTotal = 120, CompatibleEnemies = characters, Faction = Faction.Covenant, Weight = 20},
+                new RandomizedObjectDetails{Name = "flak_cannon", Path = @"objects\weapons\support_high\flak_cannon\flak_cannon", AmmoMag = 5, AmmoTotal = 20, CompatibleEnemies = characters, Weight = 8, Faction = Faction.Covenant},
+                new RandomizedObjectDetails{Name = "plasma_launcher", Path = @"objects\weapons\support_high\plasma_launcher\plasma_launcher", CompatibleEnemies = characters, Weight = 8, Faction = Faction.Covenant},
+                new RandomizedObjectDetails{Name = "rocket_launcher", Path = @"objects\weapons\support_high\rocket_launcher\rocket_launcher", AmmoMag = 2, AmmoTotal = 8, CompatibleEnemies = characters, Weight = 8, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "spartan_laser", Path = @"objects\weapons\support_high\spartan_laser\spartan_laser", CompatibleEnemies = characters, Weight = 8, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "machinegun_turret_jorge", Path = @"objects\weapons\turret\machinegun_turret_jorge\machinegun_turret_jorge", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Human},
+                new RandomizedObjectDetails{Name = "plasma_turret", Path = @"objects\vehicles\covenant\turrets\plasma_turret\weapon\plasma_turret\plasma_turret", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Covenant},
+                new RandomizedObjectDetails{Name = "machinegun_turret", Path = @"objects\vehicles\human\turrets\machinegun\weapon\machinegun_turret\machinegun_turret", AmmoMag = 200, AmmoTotal = 200, CompatibleEnemies = characters, Weight = 4, Faction = Faction.Human},
                 new RandomizedObjectDetails{Name = "target_laser", Path = @"objects\weapons\pistol\target_laser\target_laser", CompatibleEnemies = characters, Weight = 1, Faction = Faction.Human},
                 new RandomizedObjectDetails{Name = "flag", Path = @"objects\weapons\multiplayer\flag\flag", CompatibleEnemies = characters, Weight = 1},
                 new RandomizedObjectDetails{Name = "skull", Path = @"objects\weapons\multiplayer\skull\skull", CompatibleEnemies = characters, Weight = 1},
@@ -274,9 +274,9 @@ namespace ReachVisualRandomizer
                 new RandomizedObjectDetails{Name = "rocket_launcher_ammo", Path = @"objects\gear\human\military\rocket_launcher_ammo\rocket_launcher_ammo", Weight = 3},
                 new RandomizedObjectDetails{Name = "sniper_rifle_ammo", Path = @"objects\gear\human\military\sniper_rifle_ammo\sniper_rifle_ammo", Weight = 3},
                 //new RandomizedObjectDetails{Name = "health_pack", Path = @"objects\equipment\health_pack\health_pack"},
-                new RandomizedObjectDetails{Name = "powerup_blue", Path = @"objects\multi\powerups\powerup_blue\powerup_blue", Weight = 1},
-                new RandomizedObjectDetails{Name = "powerup_red", Path = @"objects\multi\powerups\powerup_red\powerup_red", Weight = 1},
-                new RandomizedObjectDetails{Name = "powerup_yellow", Path = @"objects\multi\powerups\powerup_yellow\powerup_yellow", Weight = 1},
+                //new RandomizedObjectDetails{Name = "powerup_blue", Path = @"objects\multi\powerups\powerup_blue\powerup_blue", Weight = 1},
+                //new RandomizedObjectDetails{Name = "powerup_red", Path = @"objects\multi\powerups\powerup_red\powerup_red", Weight = 1},
+                //new RandomizedObjectDetails{Name = "powerup_yellow", Path = @"objects\multi\powerups\powerup_yellow\powerup_yellow", Weight = 1},
                 new RandomizedObjectDetails{Name = "ammo_box", Path = @"objects\gear\human\military\ammo_box\ammo_box", Weight = 1},
             }
         };
@@ -543,6 +543,7 @@ namespace ReachVisualRandomizer
             Type = "bloc",
             List = new List<RandomizedObjectDetails>()
             {
+                /*
                 new RandomizedObjectDetails {Name =  "battery", Path = @"objects\props\covenant\battery\battery", Faction = Faction.Covenant},
                 new RandomizedObjectDetails {Name =  "cov_barrier", Path = @"objects\props\covenant\cov_barrier\cov_barrier", Faction = Faction.Covenant},
                 new RandomizedObjectDetails {Name =  "bulk_plasma_storage", Path = @"objects\props\covenant\bulk_plasma_storage\bulk_plasma_storage", Faction = Faction.Covenant},
@@ -566,7 +567,7 @@ namespace ReachVisualRandomizer
                 new RandomizedObjectDetails {Name =  "pallet", Path = @"objects\gear\human\industrial\pallet\pallet", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "h_barrel_rusty", Path = @"objects\gear\human\industrial\h_barrel_rusty\h_barrel_rusty", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "jersey_barrier", Path = @"objects\gear\human\industrial\jersey_barrier\jersey_barrier", Faction = Faction.Human},
-                new RandomizedObjectDetails {Name =  "container_small", Path = @"objects\vehicles\human\civilian\truck_cab_large\attachments\container_small\container_small", Faction = Faction.Human},
+                //new RandomizedObjectDetails {Name =  "container_small", Path = @"objects\vehicles\human\civilian\truck_cab_large\attachments\container_small\container_small", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "box_wooden_small", Path = @"objects\gear\human\industrial\box_wooden_small\box_wooden_small", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "oni_crate_giant", Path = @"objects\props\human\oni\oni_crate_giant\oni_crate_giant", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "oni_crate_small", Path = @"objects\props\human\oni\oni_crate_small\oni_crate_small", Faction = Faction.Human},
@@ -591,7 +592,7 @@ namespace ReachVisualRandomizer
                 new RandomizedObjectDetails {Name =  "pallet_large", Path = @"objects\gear\human\industrial\pallet_large\pallet_large", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "box_cardboard_large_open", Path = @"objects\props\human\urban\box_cardboard_large_open\box_cardboard_large_open", Faction = Faction.Human},
                 new RandomizedObjectDetails {Name =  "land_mine", Path = @"objects\multi\land_mine\land_mine", Faction = Faction.Human},
-                
+                */
                 new RandomizedObjectDetails
                 {
                     Name = "crate_h_gun_rack_1",
@@ -870,6 +871,7 @@ namespace ReachVisualRandomizer
         {
             "hog_cov",
             "falcon_ex",
+            
         };
 
 
@@ -914,6 +916,7 @@ namespace ReachVisualRandomizer
             "waf_ph",
             "waf_bsh",
             "waf_sph",
+            "trophy_cov_shade",
 
         };
 

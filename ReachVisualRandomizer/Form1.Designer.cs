@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             begin_randomization_button = new Button();
             HREKPathBox = new TextBox();
             MCCPathBox = new TextBox();
@@ -352,9 +353,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(4, 275);
             label5.Name = "label5";
-            label5.Size = new Size(242, 27);
+            label5.Size = new Size(322, 27);
             label5.TabIndex = 14;
-            label5.Text = "Randomize world equipment";
+            label5.Text = "Randomize world equipment/grenades";
             // 
             // randomize_equipment_checkbox
             // 
@@ -513,6 +514,7 @@
             Controls.Add(tableLayoutPanel1);
             Controls.Add(begin_randomization_button);
             ForeColor = SystemColors.ActiveCaptionText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = " Reach Visual Randomizer";
             tableLayoutPanel1.ResumeLayout(false);

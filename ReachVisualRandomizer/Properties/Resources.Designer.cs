@@ -59,5 +59,15 @@ namespace ReachVisualRandomizer.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HR_Mariner_MisterChief_Helmet_Icon {
+            get {
+                object obj = ResourceManager.GetObject("HR_Mariner_MisterChief_Helmet_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
