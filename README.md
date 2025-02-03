@@ -13,7 +13,7 @@ An easy-to-use randomzier for Halo Reach on the Master Chief Collection (MCC).
 3. Start ReachVisualRandomizer.exe
 4. Configure your seed and other settings as you please (default settings recommended)
 5. Make sure the MCC path and HREK path matches what is on your computer.
-     - You check the path of each from your steam library by: right clicking -> manage -> browse local files
+     - You can check the path of each from your steam library by: right clicking -> manage -> browse local files
      - If you have your MCC installation across multiple locations, make sure it is the one where Reach is installed.
 6. Click start randomization. The first level takes 10+ minutes to finish randomizing. All levels finish randomizing in about 60 minutes.
 7. Play! Make sure you boot MCC with anti-cheat off. You can play levels that have already been randomized while you wait for the rest to randomize.
